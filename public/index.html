@@ -1,0 +1,45 @@
+ <!DOCTYPE html>
+ <html ng-app='IBMfinder'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+     <head>
+         <title>
+             Findr
+         </title>
+         <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.css">
+         <link rel="stylesheet" href="css/style.css">
+         
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>       
+    <script src='lib/bootstrap-3.3.7-dist/js/bootstrap.js'></script>
+    <script src='app.config.js'></script>
+    
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-36424485-7', 'auto');
+          ga('send', 'pageview');
+    </script>
+     </head>
+     <body>
+         <header ng-controller="userCount">
+             <a href="index.html"><img src="images/logo.png" class='logo' alt=""></a> 
+             <div id='usercount' ng-cloak>{{online}} chatting right now</div>
+         </header>
+           
+            <div class='container' id='wrapper' ng-view>
+                
+                
+            </div>
+            
+        <footer>
+            Made by <a href="http://joakimloxdal.se">Joakim Loxdal</a>
+        </footer>
+     </body>
+ </html>

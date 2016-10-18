@@ -1,0 +1,1 @@
+An app i made where u can chat with randoms. More info soon.

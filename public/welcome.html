@@ -1,0 +1,21 @@
+<div class="row">
+    <div class='col-xs-12 loadText'>
+        <h2 class='welcome'>
+            Hello {{ name }}!
+        </h2>
+        <p>
+            Findr lets you chat with random strangers. Please be nice. 
+            
+        </p>
+    </div>
+</div>
+
+
+<div class="row registerform">
+    <div class='col-xs-8 register'>
+        <input type="text" placeholder='Your name' my-enter="enter()" ng-model='name' autofocus="autofocus" maxlength="30">
+    </div>
+    <div class='col-xs-4 register'>
+        <input type="submit" value='Enter' ng-click='enter()' >
+    </div>
+</div>

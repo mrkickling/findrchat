@@ -1,0 +1,31 @@
+        <div class="row">
+            <div class='col-xs-12 chat-header'>
+                <h2>
+                    You are chatting with {{partner}}     
+                    <span class='typingSign' ng-show='partnerTyping'>(typing...)</span>
+                </h2>
+            </div>
+        </div>
+
+      
+       <div class="row chatrow">
+            <div class='col-xs-12 chatcol'>
+                <div id='chatbox' class='form-control container' schroll-bottom="chatlog">
+                       <div ng-repeat='message in chatlog track by $index'>
+                           <pre><b>{{message.chatusername}}</b>{{message.chatmessage}}</pre>
+                       </div>
+                    
+
+                </div>
+                <div id="chatbar">
+                    <form ng-submit="sendMessage()">
+                        <input  type="text" class='form-control' ng-model = 'message' ng-keydown="typing()" autofocus>
+                        <input type="submit" value="Send" class='form-control' >
+                   </form>
+                </div>
+            </div>
+       </div>
+
+
+
+

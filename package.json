@@ -1,0 +1,20 @@
+{
+  "name": "ibmfinder",
+  "version": "1.0.0",
+  "description": "Omegle för ibm-anställda",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "omegle",
+    "ibm"
+  ],
+  "author": "Joakim Loxdal",
+  "license": "ISC",
+  "dependencies": {
+    "cfenv": "^1.0.3",
+    "express": "^4.14.0",
+    "socket.io": "^1.5.0"
+  }
+}
